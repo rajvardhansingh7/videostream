@@ -56,7 +56,7 @@ export const videoService = {
     // Get stream URL
     getStreamUrl: (id) => {
         const token = localStorage.getItem('token');
-        const baseUrl = import.meta.env.VITE_API_URL || '/api';
+        const baseUrl = import.meta.env.VITE_API_BASE_URL || '/api';
         return `${baseUrl}/videos/stream/${id}?token=${token}`;
     },
 
